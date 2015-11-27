@@ -1,0 +1,1 @@
+-intstyle "pa" -incremental -L "work" -L "secureip" -o "testbench.exe" --prj "C:/Users/fulop/ALU_testbench/ALU_testbench.sim/sim_1/behav/testbench.prj" -top "work.testbench" 
