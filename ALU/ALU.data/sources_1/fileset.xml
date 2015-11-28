@@ -2,15 +2,7 @@
 <DARoots Version="1" Minor="26">
   <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/new/ALU.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ALU/ALU.srcs/sources_1/new/ALU.vhd"/>
-        <Attr Name="ImportTime" Val="1448648510"/>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInSimulation" Val="1"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/testbench.vhd">
+    <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>
         <Attr Name="UsedInSimulation" Val="1"/>
@@ -18,10 +10,10 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="testbench"/>
+      <Option Name="TopModule" Val="ALU"/>
       <Option Name="TopLib" Val="work"/>
       <Option Name="TopArchitecture" Val="Behavioral"/>
-      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/testbench.vhd"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/ALU.vhd"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

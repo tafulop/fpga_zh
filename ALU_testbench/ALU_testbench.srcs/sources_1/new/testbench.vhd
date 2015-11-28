@@ -78,10 +78,10 @@ process_stimulus : process
           b <= b"00000001";
           
        -- szorzas 2
-       --wait for 10 ns;
-       --op <= b"0010";
-      -- a <= b"00000010";
-     --  b <= b"00000010";
+       wait for 10 ns;
+       op <= b"0010";
+       a <= b"00000010";
+       b <= b"00000010";
         
         -- left shift a 3
         wait for 10 ns;
@@ -104,8 +104,16 @@ process_stimulus : process
         -- right rotate a 6
         wait for 10 ns;
         op <= b"0110";
-        a <= b"00000010";
+        a <= b"00000001";
         b <= b"00000000";
+        
+        -- left rotate a 6
+        wait for 10 ns;
+        op <= b"0111";
+        a <= b"10000000";
+        b <= b"00000000";
+        
+        wait for 10 ns;
        
  end process process_stimulus; 
 

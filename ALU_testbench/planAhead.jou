@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Nov 28 14:32:17 2015
+# Process ID: 15768
+# Log file: c:/Users/fulop/FPGA_zarthelyi/ALU_testbench/planAhead.log
+# Journal file: c:/Users/fulop/FPGA_zarthelyi/ALU_testbench\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\fulop\FPGA_zarthelyi\ALU_testbench\ALU_testbench.ppr}
+update_compile_order -fileset sources_1
