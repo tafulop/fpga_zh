@@ -11,11 +11,10 @@ Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling package math_real
 Compiling architecture behavioral of entity ALU [alu_default]
 Compiling architecture behavioral of entity testbench
 Time Resolution for simulation is 1ps.
-Compiled 7 VHDL Units
+Compiled 6 VHDL Units
 Built simulation executable testbench.exe
-Fuse Memory Usage: 36188 KB
-Fuse CPU Usage: 499 ms
+Fuse Memory Usage: 36068 KB
+Fuse CPU Usage: 531 ms
