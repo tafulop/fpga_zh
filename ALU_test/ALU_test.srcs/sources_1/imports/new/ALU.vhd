@@ -21,6 +21,8 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.math_real.all;
+
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -40,49 +42,36 @@ end ALU;
 
 architecture Behavioral of ALU is
 
-signal full_result : signed  (15 downto 0);
 
 begin
 
         compute : process(a,b,op)
         
             begin 
-                    -- op: + 0
+                    -- op: +
                     if(op = "0000") then
                         result <=  (a + b);
-                    
-                    -- op: - 1
+                    -- op: -
                     elsif(op = "0001") then
                         result <= (a - b);
-                   
-                    -- op: * 2
-                    elsif(op = "0010") then
-                       full_result <= (a * b);
-                       result <= RESIZE(full_result, 8);
-                   
-                    -- op: lshift a 3
-                    elsif(op = "0011") then
-                       result <= a sll 1;
+                    -- op: *
+                    --elsif(op = "0010") then
+                       result <= a * b;
+                    -- op: lshift
+                    --when "0011" =>
+                       
+                    -- op: rshift
+                    --when "0100" =>
                     
-                    -- op: rshift 4 
-                    elsif(op = "0100") then
-                       result <= a srl 1;
+                    -- oop: atengedes
+                   -- when "0101" =>
+                       
+                    -- op: rotalas
+                   -- when "0110" =>
                     
-                    -- op: a fall through 5
-                   elsif(op = "0101") then
-                        result <= a;
-                    
-                    -- rotate right A 6
-                    elsif(op = "0110") then
-                      result <= ROTATE_RIGHT(a,1);
-                         
-                    -- rotate left A 7
-                    elsif(op = "0111") then
-                        result <= ROTATE_LEFT(a,1);
-                    
-                    -- other case: b atengedes
+                    -- other case
                     else
-                       result <= b;
+                       -- result <= b(7 downto 0);
                 end if;            
   
         end process compute;
